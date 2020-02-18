@@ -1,0 +1,26 @@
+// Colours
+
+$bgBlack: #232323;
+$bgOffWhite: #f2f3f4;
+$copyOnDark: #f7f7f7;
+$copyOnLight: #343434;
+$white: #fafafa;
+
+$primaryRed: #FF4452;
+$greyblue: #345678;
+
+
+$sixteenthRem: 0.0625rem; // 16 base == 1px
+$breakpoints: (
+  "xs": 26.26rem,
+  "sm": 46.25rem,
+  "md": 64rem,
+  "lg": 90rem,
+  "xl": 90.0625rem,
+);
+
+$bkpXS: "(max-width: #{map-get($breakpoints, "xs")})";
+$bkpXS2SM: "(min-width: #{calc(map-get($breakpoints, "xs") + $sixteenthRem)}) and (max-width: #{map-get($breakpoints, "sm")})";
+$bkpSM2MD: "(min-width: #{calc(map-get($breakpoints, "sm") + $sixteenthRem)}) and (max-width: #{map-get($breakpoints, "md")})";
+$bkpMD2LG: "(min-width: #{calc(map-get($breakpoints, "md") + $sixteenthRem)}) and (max-width: #{map-get($breakpoints, "lg")})";
+$bkpXL: "(min-width: #{map-get($breakpoints, "xl")}";

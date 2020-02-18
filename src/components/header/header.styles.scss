@@ -1,0 +1,15 @@
+@import '../../scss/variables';
+
+.tof-header {
+  background: $bgBlack;
+  padding: 0.625rem;
+
+  &__site-brand {
+    font-size: .90rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $copyOnDark;
+    padding: 0 0.625rem;
+  }
+}

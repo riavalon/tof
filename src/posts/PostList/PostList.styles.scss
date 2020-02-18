@@ -1,0 +1,99 @@
+@import '../../scss/variables';
+
+.post-list-page {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-top: 1.25rem;
+  @media (min-width: map-get($breakpoints, "md")) {
+    flex-flow: row nowrap;
+  }
+
+  &__about-posts {
+    flex: 1;
+    display: none;
+    padding: 1.25rem 0.625rem;
+    min-width: 30rem;
+
+    @media (min-width: map-get($breakpoints, "md")) {
+      display: block;
+    }
+  }
+
+  &__about-heading {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $greyblue;
+    margin: 0;
+    padding-bottom: 0.625rem;
+    border-bottom: 2px solid $greyblue;
+    font-size: 0.9375rem;
+  }
+
+  &__about-content {
+    margin: 0;
+    line-height:1.7;
+    font-size: 1.25rem;
+    color: $copyOnLight;
+    padding-top: 0.9375rem;
+  }
+}
+
+.post-list {
+  flex: 1.25;
+  list-style-type: none;
+
+  &__post {
+    background: white;
+    border-radius: 0 10px 0 10px;
+    width: 90%;
+    margin: 1.25rem auto;
+    padding: 1.25rem 0.625rem;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.04)
+  }
+
+  &__post-link {
+    color: $primaryRed;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: inline-block;
+    margin-bottom: 0.625rem;
+  }
+  &__post-meta {
+    display: flex;
+    align-items: center;
+  }
+  &__author {
+    margin-right: 0.25rem;
+  }
+  &__author,
+  &__postedOn {
+    font-size: 0.75rem;
+    color: rgba(0,0,0,0.5);
+    text-transform: uppercase;
+    letter-spacing: .95px;
+  }
+  &__post-content {
+    line-height: 1.5;
+    color: $copyOnLight;
+    font-size: 1.25rem;
+    margin: 0 0 0.625rem;
+
+    &:first-letter {
+      font-weight: 900;
+      font-size: 3rem;
+      line-height: 45px;
+      float: left;
+      text-transform: uppercase;
+      border-bottom: 4px solid $copyOnLight;
+      margin-right: 0.3125rem;
+    }
+
+    &:first-line {
+      letter-spacing: 1px;
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+  }
+}
