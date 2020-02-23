@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form => Text Input should render with test id 1`] = `
+<body>
+  <div>
+    <div
+      class="tof-form-control"
+    >
+      <label
+        for="test-id"
+      >
+        test label
+      </label>
+      <input
+        data-testid="test-id"
+        id="test-id"
+        type="text"
+      />
+    </div>
+  </div>
+</body>
+`;

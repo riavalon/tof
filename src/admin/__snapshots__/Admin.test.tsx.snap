@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Admin Page should render without issue 1`] = `
+<body>
+  <div>
+    <div
+      class="page-container"
+    >
+      <div
+        class="tof-admin"
+      >
+        <ul
+          class="tof-admin__side-nav"
+        >
+          <li>
+            <a
+              href="/admin/posts"
+            >
+              Posts
+            </a>
+          </li>
+          <li>
+            <a
+              href="/admin/fungi"
+            >
+              Fungi
+            </a>
+          </li>
+          <li>
+            <a
+              href="/admin/motd"
+            >
+              MotD
+            </a>
+          </li>
+        </ul>
+        <div
+          class="tof-admin__nav-content"
+        />
+      </div>
+    </div>
+  </div>
+</body>
+`;

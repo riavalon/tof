@@ -2,7 +2,10 @@
 
 .tof-header {
   background: $bgBlack;
-  padding: 0.625rem;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: $headerHeight;
 
   &__site-brand {
     font-size: .90rem;

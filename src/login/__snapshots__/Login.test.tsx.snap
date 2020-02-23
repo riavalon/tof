@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login should render a login form 1`] = `
+<body>
+  <div>
+    <div
+      class="page-container"
+    >
+      <div
+        class="tof-login"
+      >
+        <div
+          class="tof-login__form"
+        >
+          <h2>
+            Admin Login
+          </h2>
+          <div
+            class="tof-form-control tof-login__username"
+          >
+            <label
+              for="tof-test-login-username"
+            >
+              username
+            </label>
+            <input
+              data-testid="tof-test-login-username"
+              id="tof-test-login-username"
+              type="text"
+            />
+          </div>
+          <div
+            class="tof-form-control tof-login__password"
+          >
+            <label
+              for="tof-test-login-password"
+            >
+              password
+            </label>
+            <input
+              data-testid="tof-test-login-password"
+              id="tof-test-login-password"
+              type="password"
+            />
+          </div>
+          <button
+            class="tof-login__login-btn"
+            data-testid="tof-test-login-button"
+          >
+            Login
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

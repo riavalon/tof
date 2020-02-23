@@ -1,0 +1,45 @@
+@import '../scss/variables';
+
+.tof-admin {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row nowrap;
+  padding: 2.5rem;
+
+  &__side-nav {
+    flex: 1;
+    list-style-type: none;
+    border-left: 3px solid $primaryRed;
+    background: #fafafa;
+
+    li {
+      &:last-of-type a {
+        border-bottom: none;
+      }
+
+      & > a {
+        display: block;
+        color: lighten($copyOnLight, 20%);
+        padding: 0.625rem 0.9375rem;
+        text-decoration: none;
+        background: rgba(0,0,0,0);
+        border-bottom: 1px solid rgba(0,0,0,0.04);
+        transition: background, color, padding .2s ease;
+
+        &.active,
+        &:hover {
+          padding-left: 1.875rem;
+          color: $copyOnLight;
+          background: rgba(0,0,0,0.125);
+        }
+      }
+    }
+  }
+
+  &__nav-content {
+    flex: 2;
+    padding: 1.25rem;
+    align-self: stretch;
+  }
+}

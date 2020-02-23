@@ -1,27 +1,22 @@
-import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import React, { createContext, useState } from 'react'
 
 import './App.scss'
+
+import TOFRouter from './router/Router'
 import Header from './components/header/Header'
-import Posts from './posts/Posts'
-import PostDetail from './posts/PostDetail/PostDetail'
+import { mockAuthService } from './utils/auth'
+
+export const AuthContext = createContext(new mockAuthService())
 
 function App() {
+  const [authService, _] = useState(new mockAuthService())
   return (
-    <div className="App">
-      <Header></Header>
-
-      <Router>
-        <Switch>
-          <Route path="/post/:id">
-            <PostDetail />
-          </Route>
-          <Route path="/">
-            <Posts />
-          </Route>
-        </Switch>
-      </Router>
-    </div>
+    <AuthContext.Provider value={authService}>
+      <div className="App">
+        <Header></Header>
+        <TOFRouter />
+      </div>
+    </AuthContext.Provider>
   )
 }
 

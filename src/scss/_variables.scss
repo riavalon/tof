@@ -9,7 +9,6 @@ $white: #fafafa;
 $primaryRed: #FF4452;
 $greyblue: #345678;
 
-
 $sixteenthRem: 0.0625rem; // 16 base == 1px
 $breakpoints: (
   "xs": 26.26rem,
@@ -24,3 +23,5 @@ $bkpXS2SM: "(min-width: #{calc(map-get($breakpoints, "xs") + $sixteenthRem)}) an
 $bkpSM2MD: "(min-width: #{calc(map-get($breakpoints, "sm") + $sixteenthRem)}) and (max-width: #{map-get($breakpoints, "md")})";
 $bkpMD2LG: "(min-width: #{calc(map-get($breakpoints, "md") + $sixteenthRem)}) and (max-width: #{map-get($breakpoints, "lg")})";
 $bkpXL: "(min-width: #{map-get($breakpoints, "xl")}";
+
+$headerHeight: 45px;

@@ -1,0 +1,41 @@
+@import '../scss/variables';
+
+.tof-login {
+  width: 100%;
+  height: calc(100vh - #{$headerHeight});
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__form {
+    padding: 1.5rem 1.5rem 9rem;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  &__login-btn {
+    border: none;
+    display: block;
+    width: 100%;
+    max-width: 23rem;
+    padding: 1rem 2rem;
+    margin-left: auto;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 1rem;
+    background: $primaryRed;
+    color: $copyOnDark;
+    cursor: pointer;
+    transition: background .2s ease;
+
+    &:hover {
+      background: darken($primaryRed, 20%);
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+  }
+}

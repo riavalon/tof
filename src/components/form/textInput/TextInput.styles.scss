@@ -1,0 +1,36 @@
+.tof-form-control {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1.25rem 0 2rem;
+  border-top: 1px solid rgba(0,0,0,0.2);
+  padding-top: 0.625rem;
+
+  label {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.625rem;
+    flex: 1;
+  }
+
+  input {
+    flex: 2;
+    max-width: 23rem;
+    border: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 2px 4px 10px rgba(0,0,0,0.1);
+    padding: 1rem;
+    font-size: 1rem;
+    transition: border .2s ease;
+
+    &:active,
+    &:focus {
+      outline: none;
+      border-color: rgba(0,0,0,0.3);
+    }
+  }
+}
